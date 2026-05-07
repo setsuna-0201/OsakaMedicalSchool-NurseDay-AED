@@ -31,7 +31,7 @@ const DATA = [
   {
     step:'01', icon: Shield,
     title:'安全と反応の確認',
-    topText:'周囲の安全を確認してから近づき、肩を叩きながら大声で呼びかけます。',
+    topText:'周囲の安全を確認してから近づき、\n肩を叩きながら大声で呼びかけます。',
     bottomText:'「大丈夫ですか！」',
     bottomIsCallout: true,
     img: IMG.s2,
@@ -41,7 +41,7 @@ const DATA = [
   {
     step:'02', icon: Phone,
     title:'119番通報とAEDの手配',
-    topText:'反応がなければ大声で助けを呼び、具体的に人を指名して依頼します。',
+    topText:'反応がなければ大声で助けを呼び、\n具体的に人を指名して依頼します。',
     bottomText:'「あなたは119番をお願いします！」\n「あなたはAEDを持ってきてください！」',
     bottomIsCallout: true,
     img: IMG.s3,
@@ -51,7 +51,7 @@ const DATA = [
   {
     step:'03', icon: Hand,
     title:'胸骨圧迫を開始',
-    topText:'呼吸をしていないと思ったら、直ちに胸の真ん中を\n強く・速く・絶え間なく圧迫します。',
+    topText:'呼吸をしていないと思ったら、\n直ちに胸の真ん中を\n強く・速く・絶え間なく圧迫します。',
     metrics: [
       { k:'深さ', v:'約5cm' },
       { k:'速さ', v:'100〜120回/分' },
@@ -64,7 +64,7 @@ const DATA = [
   {
     step:'04', icon: Zap,
     title:'AEDの到着と装着',
-    topText:'AEDが届いたら何よりも先に電源を入れ、音声の指示に従ってパッドを貼ります。',
+    topText:'AEDが届いたら何よりも先に電源を入れ、\n音声の指示に従ってパッドを貼ります。',
     gallery: [
       { img:IMG.s5a, label:'患者の横に置く' },
       { img:IMG.s5b, label:'フタを開け電源ON' },
@@ -77,7 +77,7 @@ const DATA = [
   {
     step:'05', icon: ShieldAlert,
     title:'電気ショック時は離れる！',
-    topText:'AEDが「離れてください」と音声案内をしたら、全員がその人の体から離れます。',
+    topText:'AEDが「離れてください」と音声案内をしたら、\n全員がその人の体から離れます。',
     bottomText:'感電の危険！\n絶対に体に触れない！',
     bottomIsCallout: true,
     img: IMG.sHanarete,
@@ -87,7 +87,7 @@ const DATA = [
   {
     step:'06', icon: AlertTriangle,
     title:'解析と電気ショック',
-    topText:'誰もその人の体に触れていないことを確認し、ショックボタンを押します。',
+    topText:'誰もその人の体に触れていないことを確認し、\nショックボタンを押します。',
     bottomText:'ショック後 → すぐ圧迫再開',
     bottomIsCallout: true,
     img: IMG.s6,
@@ -97,7 +97,7 @@ const DATA = [
   {
     step:'07', icon: Users,
     title:'みんなで協力して命をつなぐ',
-    topText:'救急隊到着まで胸骨圧迫を続け、疲れる前に周囲と交代しましょう。',
+    topText:'救急隊到着まで胸骨圧迫を続け、\n疲れる前に周囲と交代しましょう。',
     bottomText:'「みんなで協力！」',
     bottomIsCallout: true,
     img: IMG.s7,
@@ -621,6 +621,7 @@ export default function App() {
                     color:'var(--brown-mid)', lineHeight:1.9,
                     fontWeight:500, maxWidth:560,
                     margin:'0 auto',
+                    whiteSpace:'pre-line',
                   }}>{d.topText}</p>
                 )}
               </div>
@@ -694,6 +695,7 @@ export default function App() {
                   fontSize:'clamp(18px, 2.3vw, 21px)',
                   color:'var(--brown-mid)', lineHeight:1.9,
                   fontWeight:500, maxWidth:560, margin:'0 auto',
+                  whiteSpace:'pre-line',
                 }}>{d.topText}</p>
               </div>
 
