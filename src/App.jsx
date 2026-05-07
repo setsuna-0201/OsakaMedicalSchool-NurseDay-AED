@@ -51,7 +51,7 @@ const DATA = [
   {
     step:'03', icon: Hand,
     title:'胸骨圧迫を開始',
-    topText:'普段通りの呼吸がなければ、直ちに胸の真ん中を強く・速く・絶え間なく圧迫します。',
+    topText:'呼吸をしていないと思ったら、直ちに胸の真ん中を\n強く・速く・絶え間なく圧迫します。',
     metrics: [
       { k:'深さ', v:'約5cm' },
       { k:'速さ', v:'100〜120回/分' },
@@ -77,7 +77,7 @@ const DATA = [
   {
     step:'05', icon: ShieldAlert,
     title:'電気ショック時は離れる！',
-    topText:'AEDが「離れてください」と音声案内をしたら、全員が患者の体から離れます。',
+    topText:'AEDが「離れてください」と音声案内をしたら、全員がその人の体から離れます。',
     bottomText:'感電の危険！\n絶対に体に触れない！',
     bottomIsCallout: true,
     img: IMG.sHanarete,
@@ -87,7 +87,7 @@ const DATA = [
   {
     step:'06', icon: AlertTriangle,
     title:'解析と電気ショック',
-    topText:'誰も患者に触れていないことを確認し、ショックボタンを押します。',
+    topText:'誰もその人の体に触れていないことを確認し、ショックボタンを押します。',
     bottomText:'ショック後 → すぐ圧迫再開',
     bottomIsCallout: true,
     img: IMG.s6,
